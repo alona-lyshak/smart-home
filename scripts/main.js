@@ -11,10 +11,8 @@ burger.addEventListener('click', function (e) {
     nav.classList.toggle('is-open');
 });
 
-window.addEventListener('load', function (e) {
-    burger.dispatchEvent(clickEvent);
 
-    setTimeout(function () {
-        burger.dispatchEvent(clickEvent);
-    }, 5500);
-});
+function clickMobileMenu() {
+    burger.classList.toggle('is-open');
+    nav.classList.toggle('is-open');
+}
